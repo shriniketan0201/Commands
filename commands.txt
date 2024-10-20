@@ -1,0 +1,56 @@
+git clone --recursive https://gitlab.cern.ch/tdr/notes/AN-23-064
+eval `utils/tdr runtime -sh`
+tdr --style=note b 
+//tdr --style=note b AN.tex
+git status 
+git add .
+git commit -m "add my new changes"
+git config --global user.email "shriniketanacharya@gmail.com"
+git config --global user.name "shriniketan0201"
+git push
+
+
+
+
+
+
+
+
+
+//lxplus 
+cd AN-23-064
+scl enable rh-git29 bash
+git clone --recursive https://gitlab.cern.ch/tdr/notes/AN-23-064
+  git config --global user.name "Shriniketan Acharya"
+  git config --global user.email "shriniketan.acharya@cern.ch"
+   git config --global http.emptyAuth true
+   cd AN-23-064/
+   utils/tdr b
+/afs/cern.ch/user/s/shachary/AN/AN-SUS-DM/AN-23-064
+
+
+
+//Git commit for AN-23-064
+git init
+git status
+git add .
+git commit -m "add my new changes"
+git remote add source https://gitlab.cern.ch/tdr/notes/AN-23-064.git
+
+git push -u -f source master
+
+
+
+//commit for paper 
+
+ 791  git init
+  792  git status
+  793  git add .
+  794  git commit -m "first version of changes "
+  795  git remote add master https://gitlab.cern.ch/tdr/papers/SUS-23-016.git
+  796  git remote add source https://gitlab.cern.ch/tdr/papers/SUS-23-016.git
+  797  git push -u  source master
+
+
+
+
